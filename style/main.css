@@ -18,7 +18,7 @@ a:not([class]):hover {text-decoration: none;}
 
 .up .photos {padding-bottom: 10px; padding-top: 20px;}
 .up .photos img {
-	width: 125px;
+	width: 180px;
 	border-radius: 30px;-webkit-border-radius: 30px;-moz-border-radius: 30px;}
 .up .photos img.photo:hover {
 	-webkit-box-shadow: 0 0 20px rgba(255,255,255,.6), inset 0 0 20px rgba(255,255,255,1);
@@ -36,6 +36,7 @@ a:not([class]):hover {text-decoration: none;}
 .specification .control {margin-left: 85px; margin-bottom: 5px;}
 .specification .btn-custom {padding: 2px 10px; font-size: 10px; border-radius: 5px;}
 .specification table {margin-left: 25px; margin-bottom: 0px; color: #a9a9a9d6;}
+.specification table span {color: #c7690d;}
 .specification table strong {color: #c7690d;}
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {background-color: lightgray; color: darkgrey;}
 
