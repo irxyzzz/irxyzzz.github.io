@@ -108,6 +108,13 @@ a:not([class]):hover {
 	border-radius: 5px;
 }
 
+/* Active state for filter buttons - Dark mode */
+.btn-filter.active {
+	background-color: #f05f40 !important;
+	border-color: #f05f40 !important;
+	color: #ffffff !important;
+}
+
 .specification table {
 	margin-left: 25px;
 	margin-bottom: 0px;
@@ -247,6 +254,13 @@ body.light-mode .btn-custom {
 	color: #333333;
 	border-color: #757575;
 	background-color: #ffffff;
+}
+
+/* Active state for filter buttons - Light mode */
+body.light-mode .btn-filter.active {
+	background-color: #d84315 !important;
+	border-color: #d84315 !important;
+	color: #ffffff !important;
 }
 
 body.light-mode .btn-custom:hover {

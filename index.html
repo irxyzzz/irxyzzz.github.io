@@ -416,7 +416,7 @@
                             <div class="col control">
                                 <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
                                     value="all-pub"><strong>All</strong></button>
-                                <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
+                                <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter active"
                                     value="selected-pub"><strong>Selected</strong></button>
                                 <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
                                     value="manuscript-pub"><strong>Manuscript</strong></button>
@@ -516,7 +516,7 @@
                                             <p class="paper-reference">
                                                 Yizhong Liu, Zixiao Jia, Xiao Chen, Song Bian, <span>Runhua Xu</span>,
                                                 Dawei Li, Yuan Lu.
-                                                “Aion: Robust and Efficient {Multi-Round}{Single-Mask} Secure
+                                                “Aion: Robust and Efficient Multi-Round Single-Mask Secure
                                                 Aggregation Against Malicious Participants”.
                                                 <em>In Proceedings of 34th USENIX Security Symposium (USENIX Security
                                                     25).</em>
@@ -1349,11 +1349,24 @@
                     $('#icon-trigger-bottom').addClass('fas fa-compress-alt fa-lg');
                 }
             });
+
+            // Publication 筛选功能
             $('.btn-filter').click(function () {
+                // 移除所有按钮的 active 类
+                $('.btn-filter').removeClass('active');
+                // 为当前点击的按钮添加 active 类
+                $(this).addClass('active');
+
                 var value = $(this).val().toLowerCase();
                 $('#table_publication tr').filter(function () {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
+            });
+
+            // 页面加载时默认显示 Selected 类别
+            var defaultFilter = 'selected-pub';
+            $('#table_publication tr').filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(defaultFilter) > -1)
             });
         });
 
