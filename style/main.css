@@ -7,6 +7,25 @@ body {
 	margin-bottom: 10px;
 }
 
+.award-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	margin: 0 4px;
+	padding: 1px 6px;
+	border: 1px solid rgba(240, 95, 64, 0.55);
+	border-radius: 999px;
+	background-color: rgba(240, 95, 64, 0.12);
+	color: #f0a23a;
+	font-size: 0.78rem;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.award-badge i {
+	color: #ffc857;
+}
+
 a {
 	color: #f05f40cf;
 }
@@ -97,7 +116,35 @@ a:not([class]):hover {
 	margin-bottom: 0px;
 }
 
+.service-subheading {
+	margin-left: 25px;
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+
+.service-subheading-tight {
+	margin-top: -10px;
+}
+
+.service-years {
+	display: inline;
+	white-space: normal;
+}
+
+.service-years a {
+	display: inline-block;
+	margin: 0 1px 2px 0;
+	padding: 0 4px;
+	border: 1px solid rgba(240, 95, 64, 0.35);
+	border-radius: 4px;
+	font-size: 0.76rem;
+	line-height: 1.25;
+}
+
 .specification .control {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
 	margin-left: 85px;
 	margin-bottom: 5px;
 }
@@ -116,9 +163,21 @@ a:not([class]):hover {
 }
 
 .specification table {
-	margin-left: 25px;
 	margin-bottom: 0px;
 	color: #a9a9a9d6;
+}
+
+.publication-table-wrap {
+	margin-left: 25px;
+	width: calc(100% - 25px);
+}
+
+#clustrmapsContainer,
+#clustrmapsContainer .clustrmaps-map-control,
+#clustrmapsContainer .clustrmaps-map-container,
+#clustrmapsContainer .clstm,
+#clustrmapsContainer .clustrmaps-map {
+	max-width: 100%;
 }
 
 .specification table span {
@@ -231,11 +290,26 @@ body.light-mode .specification table strong {
 	color: #d84315;
 }
 
+body.light-mode .table-dark {
+	--bs-table-bg: #f5f5f5;
+	--bs-table-striped-bg: #f5f5f5;
+	--bs-table-striped-color: #333333;
+	--bs-table-active-bg: #e2e8ee;
+	--bs-table-active-color: #212121;
+	--bs-table-hover-bg: #e7ebef;
+	--bs-table-hover-color: #212121;
+	color: #333333;
+}
+
 /* 浅色模式下的表格 hover 效果 */
-body.light-mode .table-hover tbody tr:hover td,
-body.light-mode .table-hover tbody tr:hover th {
-	background-color: #ebebeb !important;
-	color: #cfcccc !important;
+body.light-mode .table-hover>tbody>tr:hover {
+	color: #212121 !important;
+}
+
+body.light-mode .table-hover>tbody>tr:hover>* {
+	background-color: #e7ebef !important;
+	box-shadow: inset 0 0 0 9999px #e7ebef !important;
+	color: #212121 !important;
 	transition: background-color 0.2s ease;
 }
 
@@ -276,6 +350,21 @@ body.light-mode .btn-outline-secondary {
 body.light-mode .btn-outline-secondary:hover {
 	background-color: #757575;
 	color: #ffffff;
+}
+
+body.light-mode .award-badge {
+	border-color: rgba(216, 67, 21, 0.45);
+	background-color: rgba(216, 67, 21, 0.08);
+	color: #a43b00;
+}
+
+body.light-mode .award-badge i {
+	color: #c57900;
+}
+
+body.light-mode .service-years a {
+	border-color: rgba(216, 67, 21, 0.35);
+	background-color: rgba(216, 67, 21, 0.04);
 }
 
 /* 主题切换按钮样式 */
@@ -346,5 +435,38 @@ body.light-mode .theme-toggle i {
 
 	.theme-toggle i {
 		font-size: 1rem;
+	}
+
+	.specification p,
+	.specification h6,
+	.service-subheading {
+		margin-left: 0;
+	}
+
+	.service-subheading-tight {
+		margin-top: 4px;
+	}
+
+	.specification .control {
+		margin-left: 0;
+	}
+
+	.specification .fa-ul {
+		margin-left: 1.5rem;
+		max-width: calc(100% - 1.5rem);
+		width: auto;
+	}
+
+	.specification .fa-ul li {
+		overflow-wrap: anywhere;
+	}
+
+	.publication-table-wrap {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.award-badge {
+		margin-top: 2px;
 	}
 }
