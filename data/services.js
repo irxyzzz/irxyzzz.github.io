@@ -2,7 +2,7 @@
 window.siteServices = {
     "journal": [
         {
-            "icon": "fas fa-edit",
+            "icon": "fas fa-pen-nib",
             "role": "Associated Editor",
             "organization": {
                 "label": "IEEE Transactions on Dependable and Secure Computing (IEEE TDSC)",
@@ -11,7 +11,7 @@ window.siteServices = {
             "dates": "2025 - Present"
         },
         {
-            "icon": "fas fa-user-edit",
+            "icon": "fas fa-user-graduate",
             "role": "Youth Editorial Board Member",
             "organization": {
                 "label": "Blockchain",
@@ -20,7 +20,7 @@ window.siteServices = {
             "dates": "2025 - Present"
         },
         {
-            "icon": "fas fa-user-edit",
+            "icon": "fas fa-user-graduate",
             "role": "Youth Editorial Board Member",
             "organization": {
                 "label": "Chinese Journal of Electronics (CJE)",
@@ -29,7 +29,7 @@ window.siteServices = {
             "dates": "2024 - Present"
         },
         {
-            "icon": "fas fa-file-alt",
+            "icon": "fas fa-file-signature",
             "role": "Guest Editor",
             "specialIssue": {
                 "label": "AI and Blockchain Convergence",
@@ -42,7 +42,7 @@ window.siteServices = {
             "deadline": "September 30, 2026"
         },
         {
-            "icon": "fas fa-file-alt",
+            "icon": "fas fa-file-signature",
             "role": "Guest Editor",
             "specialIssue": {
                 "label": "Cyber Security for Multimodal Transport",
@@ -55,7 +55,7 @@ window.siteServices = {
             "deadline": "May 31, 2025"
         },
         {
-            "icon": "fas fa-file-alt",
+            "icon": "fas fa-file-signature",
             "role": "Guest Editor",
             "specialIssue": {
                 "label": "Security, Privacy, and Trust in Blockchain and Web 3.0",
@@ -70,7 +70,7 @@ window.siteServices = {
     ],
     "conference": [
         {
-            "icon": "fas fa-user-tie",
+            "icon": "fas fa-user-check",
             "role": "SSC Member",
             "organization": "The Network and Distributed System Security Symposium (NDSS)",
             "years": [
@@ -81,7 +81,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-user-tie",
+            "icon": "fas fa-user-check",
             "organization": "ACM Conference on Data and Application Security and Privacy (CODASPY)",
             "assignments": [
                 {
@@ -109,7 +109,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-user-tie",
+            "icon": "fas fa-user-check",
             "role": "TPC Member",
             "organization": "ACM Symposium on Access Control Models and Technologies (SACMAT)",
             "years": [
@@ -124,7 +124,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-user-tie",
+            "icon": "fas fa-user-check",
             "role": "TPC Member",
             "organization": "The AAAI Conference on Artificial Intelligence (AAAI)",
             "years": [
@@ -135,7 +135,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-user-tie",
+            "icon": "fas fa-user-check",
             "role": "TPC Member",
             "organization": "IEEE International Conference on Data Mining (ICDM)",
             "years": [
@@ -150,7 +150,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-user-tie",
+            "icon": "fas fa-user-check",
             "role": "TPC Member",
             "organization": "European Symposium on Research in Computer Security (ESORICS)",
             "years": [
@@ -161,7 +161,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-user-tie",
+            "icon": "fas fa-user-check",
             "role": "TPC Member",
             "organization": "IEEE International Conference on Big Data (BigData)",
             "years": [
@@ -192,7 +192,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-cog",
+            "icon": "fas fa-users-cog",
             "roles": [
                 "Publication Chair",
                 "Publicity Chair",
@@ -235,7 +235,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-cog",
+            "icon": "fas fa-users-cog",
             "roles": [
                 "Publication Chair",
                 "Publicity Chair",
@@ -278,7 +278,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-cog",
+            "icon": "fas fa-users-cog",
             "roles": [
                 "Publication Chair",
                 "Publicity Chair",
@@ -321,7 +321,7 @@ window.siteServices = {
             ]
         },
         {
-            "icon": "fas fa-cog",
+            "icon": "fas fa-users-cog",
             "roles": [
                 "Publication Chair",
                 "Workshop Chair"
@@ -336,7 +336,7 @@ window.siteServices = {
             "note": "inaugural edition"
         },
         {
-            "icon": "fas fa-cog",
+            "icon": "fas fa-calendar-check",
             "role": "Organization Chair",
             "organization": "The 2023 International Workshop on Privacy-Preserving Machine Learning",
             "inlineLink": {
@@ -345,7 +345,7 @@ window.siteServices = {
             }
         },
         {
-            "icon": "fas fa-cog",
+            "icon": "fas fa-calendar-check",
             "role": "Organization Chair",
             "organization": "The 2024 1st Workshop on Large Language Models and Cybersecurity",
             "inlineLink": {

@@ -54,11 +54,64 @@
         list.innerHTML = items.map((item) => `
             <li>
                 <span class="fa-li">
-                    <i class="${escapeHtml(item.icon)}" style="font-size: 0.85rem;"></i>
+                    <i class="service-icon ${escapeHtml(item.icon)}"></i>
                 </span>
                 ${renderItem(item)}
             </li>
         `).join('');
+    };
+
+    const makeJournalLabel = (journal) => {
+        if (!journal) return '';
+        return escapeHtml(journal.abbr || journal.name);
+    };
+
+    const renderReviewGroup = (group, journalById) => {
+        const journals = (group.featured || [])
+            .map((id) => journalById.get(id))
+            .filter(Boolean);
+
+        if (!journals.length) return '';
+
+        const selectedJournals = journals.map(makeJournalLabel).join(' / ');
+
+        return `
+            <li class="review-group">
+                <span class="fa-li">
+                    <i class="service-icon ${escapeHtml(group.icon)}"></i>
+                </span>
+                <span class="review-group-title">${escapeHtml(group.label)}:</span>
+                <span class="review-journal-tags">${selectedJournals} <span class="review-ellipsis">...</span></span>
+            </li>
+        `;
+    };
+
+    const renderJournalReviews = () => {
+        const panel = document.getElementById('journal-review-panel');
+        if (!panel) return;
+
+        const reviews = window.siteReviews || { groups: [], journals: [] };
+        const journals = reviews.journals || [];
+        const journalById = new Map(journals.map((journal) => [journal.id, journal]));
+        const groups = reviews.groups || [];
+        const completeList = journals.map((journal) => `
+            <li data-review-category="${escapeHtml(journal.category)}">
+                ${makeJournalLabel(journal)}
+            </li>
+        `).join('');
+
+        panel.innerHTML = `
+            <p class="review-summary">${escapeHtml(reviews.summary || '')}</p>
+            <ul class="fa-ul review-groups">
+                ${groups.map((group) => renderReviewGroup(group, journalById)).join('')}
+            </ul>
+            <details class="review-more">
+                <summary>more</summary>
+                <ul class="review-complete-list">
+                    ${completeList}
+                </ul>
+            </details>
+        `;
     };
 
     const renderPublicationLinks = (links) => {
@@ -141,6 +194,7 @@
         const services = window.siteServices || { journal: [], conference: [] };
         renderServiceList('journal-services-list', services.journal || [], renderJournalService);
         renderServiceList('conference-services-list', services.conference || [], renderConferenceService);
+        renderJournalReviews();
         renderPublications();
     };
 }());
