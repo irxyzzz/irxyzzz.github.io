@@ -116,7 +116,10 @@
 
     const renderPublicationLinks = (links) => {
         if (!links || !links.length) return '';
-        return links.map((link) => `[ ${makeLink(link.url, link.label)} ]`).join(' ');
+        const renderedLinks = links
+            .map((link) => `<span class="paper-link-item">[ ${makeLink(link.url, link.label)} ]</span>`)
+            .join(' ');
+        return `<span class="paper-links">${renderedLinks}</span>`;
     };
 
     const renderBadges = (badges) => {
@@ -124,22 +127,38 @@
         return badges.map((badge) => `<span class="award-badge"><i class="${escapeHtml(badge.icon)}"></i> ${escapeHtml(badge.label)}</span>`).join(' ');
     };
 
+    const renderNotes = (notes) => {
+        const normalizedNotes = Array.isArray(notes) ? notes : (notes ? [notes] : []);
+        if (!normalizedNotes.length) return '';
+        return normalizedNotes
+            .map((note) => `<span class="paper-note">${escapeHtml(note)}</span>`)
+            .join(' ');
+    };
+
+    const ensureSentenceEnd = (value) => {
+        const text = String(value || '').trim();
+        if (!text) return '';
+        return /[.!?)]$/.test(text) ? text : `${text}.`;
+    };
+
+    const cleanTitle = (title) => String(title || '').trim().replace(/[.,]\s*$/, '');
+
     const renderPatentVenue = (patent) => {
         if (!patent) return '';
 
         const formatPatentNumber = (number) => String(number || '').replace(/^US\s*/i, '');
 
         if (patent.grant && patent.application) {
-            return `U.S. Patent ${escapeHtml(formatPatentNumber(patent.grant.number))}, issued ${escapeHtml(patent.grant.date)} (application ${escapeHtml(patent.application.number)}; published as ${escapeHtml(patent.application.publication)} on ${escapeHtml(patent.application.publicationDate)}).`;
+            return `U.S. Patent ${formatPatentNumber(patent.grant.number)}, issued ${patent.grant.date} (application ${patent.application.number}; published as ${patent.application.publication} on ${patent.application.publicationDate}).`;
         }
 
         if (patent.grant) {
-            return `U.S. Patent ${escapeHtml(formatPatentNumber(patent.grant.number))}, issued ${escapeHtml(patent.grant.date)}.`;
+            return `U.S. Patent ${formatPatentNumber(patent.grant.number)}, issued ${patent.grant.date}.`;
         }
 
         if (patent.application) {
-            const status = patent.application.status ? `; ${escapeHtml(patent.application.status)}` : '';
-            return `U.S. Patent Application ${escapeHtml(patent.application.publication)}, published ${escapeHtml(patent.application.publicationDate)} (application ${escapeHtml(patent.application.number)}${status}).`;
+            const status = patent.application.status ? `; ${patent.application.status}` : '';
+            return `U.S. Patent Application ${patent.application.publication}, published ${patent.application.publicationDate} (application ${patent.application.number}${status}).`;
         }
 
         return '';
@@ -150,32 +169,59 @@
 
         const renderedAuthors = authors.map((author) => {
             const safeAuthor = escapeHtml(author);
-            return author === 'Runhua Xu' ? `<span>${safeAuthor}</span>` : safeAuthor;
+            return author === 'Runhua Xu' ? `<span class="paper-author-self">${safeAuthor}</span>` : safeAuthor;
         });
 
         if (renderedAuthors.length === 1) return `${renderedAuthors[0]}.`;
         if (renderedAuthors.length === 2) return `${renderedAuthors[0]} and ${renderedAuthors[1]}.`;
-        return `${renderedAuthors.join(', ')}.`;
+        return `${renderedAuthors.slice(0, -1).join(', ')}, and ${renderedAuthors[renderedAuthors.length - 1]}.`;
+    };
+
+    const renderPublicationTitle = (item) => {
+        const title = cleanTitle(item.title);
+        if (!title) return '';
+
+        const titleSuffix = item.titleSuffix ? ` ${escapeHtml(item.titleSuffix.trim())}` : '';
+        const sentenceEnd = /[!?]$/.test(title) ? '' : '.';
+        return `<span class="paper-title">&ldquo;${escapeHtml(title)}&rdquo;${titleSuffix}${sentenceEnd}</span>`;
+    };
+
+    const renderPublicationVenue = (item) => {
+        const venue = item.patent
+            ? renderPatentVenue(item.patent)
+            : `${item.venue || ''}${item.venueSuffix || ''}`;
+
+        if (!String(venue || '').trim()) return '';
+        return `<span class="paper-venue"><em>${escapeHtml(ensureSentenceEnd(venue))}</em></span>`;
+    };
+
+    const renderPublicationExtras = (item) => {
+        const extras = [
+            renderBadges(item.badges),
+            renderPublicationLinks(item.links),
+            renderNotes(item.notes || item.note)
+        ].filter(Boolean);
+
+        if (!extras.length) return '';
+        return `<span class="paper-extras">${extras.join(' ')}</span>`;
     };
 
     const renderPublication = (item) => {
         const types = item.type || [];
-        const titleSuffix = item.titleSuffix ? ` ${escapeHtml(item.titleSuffix)}` : '';
-        const venue = item.patent ? renderPatentVenue(item.patent) : item.venue;
-        const venueSuffix = item.patent ? '' : (item.venueSuffix ? escapeHtml(item.venueSuffix) : '');
-        const badges = renderBadges(item.badges);
-        const links = renderPublicationLinks(item.links);
+        const authors = renderAuthors(item.authors);
+        const title = renderPublicationTitle(item);
+        const venue = renderPublicationVenue(item);
+        const extras = renderPublicationExtras(item);
 
         return `
             <tr data-type="${escapeHtml(types.join(' '))}">
                 <th scope="row">${escapeHtml(item.year)}</th>
                 <td>
                     <p class="paper-reference">
-                        ${renderAuthors(item.authors)}
-                        "${escapeHtml(item.title)}"${titleSuffix}
-                        <em>${escapeHtml(venue)}</em>${venueSuffix}
-                        ${badges}
-                        ${links}
+                        <span class="paper-authors">${authors}</span>
+                        ${title}
+                        ${venue}
+                        ${extras}
                     </p>
                 </td>
                 <td class="hidden">${escapeHtml(types.join(' '))}</td>

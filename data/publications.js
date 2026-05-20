@@ -26,7 +26,7 @@ window.sitePublications = [
         "authors": [
             "Runhua Xu",
             "Guoan Wan",
-            "James Joshi"
+            "James B.D. Joshi"
         ],
         "title": "Position: The Privacy-Auditability Paradox in Federated Learning: Why We Need Controllable Secure Aggregation",
         "titleSuffix": "",
@@ -52,7 +52,7 @@ window.sitePublications = [
             "Chao Li",
             "Yizhong Liu",
             "Jianxin Li",
-            "James Joshi"
+            "James B.D. Joshi"
         ],
         "title": "Sparsification Under Siege: Defending Against Poisoning Attacks in Communication-Efficient Federated Learning",
         "titleSuffix": "",
@@ -170,7 +170,7 @@ window.sitePublications = [
         "authors": [
             "Runhua Xu",
             "Guoan Wan",
-            "James Joshi"
+            "James B.D. Joshi"
         ],
         "title": "Privacy-Preserving Federated Large Language Models: Techniques and Trade-offs.",
         "titleSuffix": "",
@@ -297,7 +297,7 @@ window.sitePublications = [
             "Yangqiu Song",
             "Jin Dong",
             "Jianxin Li",
-            "Philip S Yu"
+            "Philip S. Yu"
         ],
         "title": "Privacy-preserving federated embedding learning for localized retrieval-augmented generation",
         "titleSuffix": "",
@@ -409,7 +409,7 @@ window.sitePublications = [
             "Ehud Aharoni",
             "Nathalie Baracaldo Angel",
             "Runhua Xu",
-            "Heiko H Ludwig"
+            "Heiko H. Ludwig"
         ],
         "title": "Secure reordering using tensor of indicators.",
         "titleSuffix": "",
@@ -448,7 +448,7 @@ window.sitePublications = [
             "Runhua Xu",
             "Shiqi Gao",
             "Chao Li",
-            "James Joshi",
+            "James B.D. Joshi",
             "Jianxin Li"
         ],
         "title": "Dual Defense: Enhancing Privacy and Mitigating Poisoning Attacks in Federated Learning",
@@ -542,7 +542,7 @@ window.sitePublications = [
             "Runhua Xu",
             "Bo Li",
             "Chao Li",
-            "James Joshi",
+            "James B.D. Joshi",
             "Shuai Ma",
             "Jianxin Li"
         ],
@@ -577,8 +577,8 @@ window.sitePublications = [
             "Nathalie Baracaldo Angel",
             "Runhua Xu",
             "Yuya Jeremy Ong",
-            "Annie K Abay",
-            "Heiko H Ludwig",
+            "Annie K. Abay",
+            "Heiko H. Ludwig",
             "Gegi Thomas",
             "Jayaram Kallapalayam Radhakrishnan",
             "Laura Wynter"
@@ -802,7 +802,7 @@ window.sitePublications = [
         "authors": [
             "Runhua Xu",
             "Chao Li",
-            "James Joshi"
+            "James B.D. Joshi"
         ],
         "title": "Blockchain-Based Transparency Framework for Privacy Preserving Third-Party Services,",
         "titleSuffix": "",
@@ -947,7 +947,7 @@ window.sitePublications = [
             "Nathalie Baracaldo",
             "Yi Zhou",
             "Ali Anwar",
-            "James Joshi",
+            "James B.D. Joshi",
             "Heiko Ludwig"
         ],
         "title": "FedV: Privacy-Preserving Federated Learning over Vertically Partitioned Data.",

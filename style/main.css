@@ -5,13 +5,67 @@ body {
 
 .paper-reference {
 	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+.paper-authors,
+.paper-title,
+.paper-venue {
+	display: inline;
+}
+
+.paper-author-self {
+	color: #f05f40;
+	font-weight: 700;
+}
+
+.paper-title {
+	color: #d6d6d6;
+}
+
+.paper-venue em {
+	color: #cfcfcf;
+}
+
+.paper-extras {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 4px;
+	margin-left: 4px;
+	vertical-align: baseline;
+}
+
+.paper-links {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.paper-link-item {
+	color: #a9a9a9d6;
+	white-space: nowrap;
+}
+
+.paper-link-item a {
+	font-weight: 700;
+}
+
+.paper-note {
+	color: #d6d6d6;
+	font-size: 0.84rem;
+}
+
+.paper-note::before {
+	color: #777777;
+	content: "· ";
 }
 
 .award-badge {
 	display: inline-flex;
 	align-items: center;
 	gap: 4px;
-	margin: 0 4px;
+	margin: 0 2px;
 	padding: 1px 6px;
 	border: 1px solid rgba(240, 95, 64, 0.55);
 	border-radius: 999px;
@@ -427,7 +481,7 @@ a:not([class]):hover {
 	max-width: 100%;
 }
 
-.specification table span {
+.specification table .paper-author-self {
 	color: #c7690d;
 }
 
@@ -529,8 +583,25 @@ body.light-mode .specification table {
 	color: #333333;
 }
 
-body.light-mode .specification table span {
+body.light-mode .specification table .paper-author-self {
 	color: #d84315;
+}
+
+body.light-mode .paper-title,
+body.light-mode .paper-venue em {
+	color: #333333;
+}
+
+body.light-mode .paper-link-item {
+	color: #333333;
+}
+
+body.light-mode .paper-note {
+	color: #555555;
+}
+
+body.light-mode .paper-note::before {
+	color: #777777;
 }
 
 body.light-mode .specification table strong {
