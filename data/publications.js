@@ -123,10 +123,6 @@ window.sitePublications = [
             {
                 "label": "CJE",
                 "url": "https://cje.ejournal.org.cn/article/doi/10.23919/cje.2025.00.214"
-            },
-            {
-                "label": "DOI",
-                "url": "https://doi.org/10.23919/cje.2025.00.214"
             }
         ]
     },
@@ -154,10 +150,6 @@ window.sitePublications = [
             {
                 "label": "CJE",
                 "url": "https://cje.ejournal.org.cn/article/doi/10.23919/cje.2025.00.116"
-            },
-            {
-                "label": "DOI",
-                "url": "https://doi.org/10.23919/cje.2025.00.116"
             }
         ]
     },
@@ -207,6 +199,10 @@ window.sitePublications = [
             {
                 "label": "Wiley Link",
                 "url": "https://www.wiley.com/en-us/AI+for+Cybersecurity%3A+Research+and+Practice-p-9781394293742#aboutauthors-section"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1002/9781394293773.ch06"
             }
         ]
     },
@@ -266,7 +262,7 @@ window.sitePublications = [
         "links": [
             {
                 "label": "arXiv",
-                "url": "https://arxiv.org/abs/2504.19101"
+                "url": "https://arxiv.org/abs/2505.09928"
             },
             {
                 "label": "ACM",
@@ -320,10 +316,12 @@ window.sitePublications = [
         "authors": [
             "Yizhong Liu",
             "Zixiao Jia",
+            "Zian Jin",
             "Xiao Chen",
             "Song Bian",
             "Runhua Xu",
             "Dawei Li",
+            "Jianwei Liu",
             "Yuan Lu"
         ],
         "title": "Aion: Robust and Efficient Multi-Round Single-Mask Secure Aggregation Against Malicious Participants",
@@ -334,7 +332,15 @@ window.sitePublications = [
         "links": [
             {
                 "label": "USENIX",
-                "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/liu-yizhongf"
+                "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/liu-yizhong"
+            },
+            {
+                "label": "PDF",
+                "url": "https://www.usenix.org/system/files/usenixsecurity25-liu-yizhong.pdf"
+            },
+            {
+                "label": "Appendix",
+                "url": "https://www.usenix.org/system/files/usenixsecurity25-appendix-liu-yizhong.pdf"
             }
         ]
     },
@@ -357,7 +363,16 @@ window.sitePublications = [
         "venue": "In Proceedings of The 39th Annual AAAI Conference on Artificial Intelligence (AAAI '25). Philadelphia, PA, USA.",
         "venueSuffix": "",
         "badges": [],
-        "links": []
+        "links": [
+            {
+                "label": "AAAI",
+                "url": "https://ojs.aaai.org/index.php/AAAI/article/view/33840"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1609/aaai.v39i16.33840"
+            }
+        ]
     },
     {
         "year": "2025",
@@ -460,6 +475,10 @@ window.sitePublications = [
             {
                 "label": "OpenReview",
                 "url": "https://openreview.net/forum?id=EVw8Jh5Et9"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.52202/079017-2253"
             }
         ]
     },
@@ -863,6 +882,14 @@ window.sitePublications = [
             {
                 "label": "slides",
                 "url": "resource/papers/cloud22_detrust_fl_slide_runhua.pdf"
+            },
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/9860595"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/CLOUD55607.2022.00065"
             }
         ]
     },
@@ -885,6 +912,10 @@ window.sitePublications = [
             {
                 "label": "Springer Link",
                 "url": "https://link.springer.com/chapter/10.1007/978-3-030-96896-0_13"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1007/978-3-030-96896-0_13"
             }
         ]
     },
@@ -910,6 +941,10 @@ window.sitePublications = [
             {
                 "label": "Springer Link",
                 "url": "https://link.springer.com/chapter/10.1007/978-3-030-96896-0_18"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1007/978-3-030-96896-0_18"
             }
         ]
     },
@@ -963,6 +998,14 @@ window.sitePublications = [
             {
                 "label": "S&P2021 Poster",
                 "url": "resource/posters/fedv-sp2021-poster.pdf"
+            },
+            {
+                "label": "ACM",
+                "url": "https://dl.acm.org/doi/10.1145/3474369.3486872"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1145/3474369.3486872"
             }
         ]
     },
@@ -990,6 +1033,14 @@ window.sitePublications = [
             {
                 "label": "appendix",
                 "url": "resource/papers/tdsc_nn-emd_appendix.pdf"
+            },
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/9409653"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/TDSC.2021.3074439"
             }
         ]
     },
@@ -1018,6 +1069,14 @@ window.sitePublications = [
             {
                 "label": "dataset",
                 "url": "https://github.com/archerlclclc/SteemOps"
+            },
+            {
+                "label": "ACM",
+                "url": "https://dl.acm.org/doi/10.1145/3422337.3447845"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1145/3422337.3447845"
             }
         ]
     },
@@ -1043,6 +1102,14 @@ window.sitePublications = [
             {
                 "label": "slides",
                 "url": "resource/papers/tps20_fe-smc_slides.pdf"
+            },
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/9325411"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/TPS-ISA50397.2020.00038"
             }
         ]
     },
@@ -1067,6 +1134,10 @@ window.sitePublications = [
             {
                 "label": "pdf",
                 "url": "https://arxiv.org/pdf/2009.02561.pdf"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/SRDS51746.2020.00012"
             }
         ]
     },
@@ -1089,6 +1160,14 @@ window.sitePublications = [
             {
                 "label": "pdf",
                 "url": "resource/papers/toit_tt_tpa.pdf"
+            },
+            {
+                "label": "ACM",
+                "url": "https://dl.acm.org/doi/10.1145/3386262"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1145/3386262"
             }
         ]
     },
@@ -1114,6 +1193,18 @@ window.sitePublications = [
             {
                 "label": "pdf",
                 "url": "resource/papers/aisec19_hybrid_alpha.pdf"
+            },
+            {
+                "label": "arXiv",
+                "url": "https://arxiv.org/abs/1912.05897"
+            },
+            {
+                "label": "ACM",
+                "url": "https://dl.acm.org/doi/10.1145/3338501.3357371"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1145/3338501.3357371"
             }
         ]
     },
@@ -1137,6 +1228,14 @@ window.sitePublications = [
             {
                 "label": "pdf",
                 "url": "resource/papers/tdsc_abac_sd.pdf"
+            },
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/8862918"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/TDSC.2019.2946073"
             }
         ]
     },
@@ -1164,6 +1263,14 @@ window.sitePublications = [
             {
                 "label": "slides",
                 "url": "resource/papers/icdcs19_cryptonn_slides.pdf"
+            },
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/8885038"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/ICDCS.2019.00121"
             }
         ]
     },
@@ -1188,8 +1295,12 @@ window.sitePublications = [
                 "url": "https://arxiv.org/pdf/1902.06359.pdf"
             },
             {
-                "label": "slides",
-                "url": "https://blockchain.comp.hkbu.edu.hk/blockdm2019/slides/BlockDM19-Chao.pptx"
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/8750913"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/ICDEW.2019.00-43"
             }
         ]
     },
@@ -1216,6 +1327,14 @@ window.sitePublications = [
             {
                 "label": "slides",
                 "url": "resource/papers/trustcom18_slides.pdf"
+            },
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/8456022"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/TrustCom/BigDataSE.2018.00153"
             }
         ]
     },
@@ -1268,6 +1387,14 @@ window.sitePublications = [
             {
                 "label": "slides",
                 "url": "resource/papers/cic16_slides.pdf"
+            },
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/7809732"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/CIC.2016.061"
             }
         ]
     },
@@ -1293,6 +1420,14 @@ window.sitePublications = [
             {
                 "label": "slides",
                 "url": "resource/papers/cloud16_slides.pdf"
+            },
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/7820256"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/CLOUD.2016.0019"
             }
         ]
     },
@@ -1314,6 +1449,10 @@ window.sitePublications = [
             {
                 "label": "pdf",
                 "url": "resource/papers/ijcc_cpabe_cloud.pdf"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1504/IJCC.2015.074224"
             }
         ]
     },
@@ -1336,6 +1475,14 @@ window.sitePublications = [
             {
                 "label": "pdf",
                 "url": "resource/papers/lncs_ccis_ecpabe.pdf"
+            },
+            {
+                "label": "Springer Link",
+                "url": "https://link.springer.com/chapter/10.1007/978-3-662-44788-8_18"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1007/978-3-662-44788-8_18"
             }
         ]
     },
@@ -1362,6 +1509,14 @@ window.sitePublications = [
             {
                 "label": "slides",
                 "url": "resource/papers/cbd13_sllides.pdf"
+            },
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/6824572"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/CBD.2013.9"
             }
         ]
     },
@@ -1388,6 +1543,10 @@ window.sitePublications = [
             {
                 "label": "slides",
                 "url": "resource/papers/secrypt13_slides.pdf"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.5220/0004525801470157"
             }
         ]
     }
