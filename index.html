@@ -35,6 +35,11 @@
         gtag('js', new Date());
         gtag('config', 'G-47BGZ729Y6');
     </script>
+
+    <!-- Umami Analytics -->
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="f5e8bf54-21bd-4dce-85f2-6518e833a5fc"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -268,14 +273,6 @@
                         </section>
                     </div>
                 </div>
-
-                <div class="visitor-map-footer">
-                    <div class="specification visitor-map-panel">
-                        <div id="clustrmapsContainer">
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="col d-none d-sm-block"></div>
         </div>
@@ -339,50 +336,6 @@
             return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
         };
 
-        // 加载 Clustrmaps 地图（根据主题）
-        const loadClustrMaps = (theme) => {
-            const container = document.getElementById('clustrmapsContainer');
-            if (!container) return;
-
-            container.innerHTML = '';
-
-            const fallback = document.createElement('div');
-            fallback.className = 'visitor-map-fallback';
-            fallback.textContent = 'Visitor map is temporarily unavailable.';
-            container.appendChild(fallback);
-
-            // 创建新的 script 标签
-            const script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.id = 'clustrmaps';
-            script.async = true;
-            const mapWidth = Math.min(400, Math.max(260, Math.floor(container.clientWidth || 400)));
-            const mapParams = `w=${mapWidth}&t=tt&d=4Jc_sN3MeqBtMtLftkERikAOMy5YATHqhqH3CPDH99Q`;
-            const markMapLoaded = () => {
-                window.setTimeout(() => {
-                    const hasRenderedMap = container.querySelector('canvas, iframe, img, svg, a, .clustrmaps-map, .clstm');
-                    if (hasRenderedMap) {
-                        fallback.remove();
-                    } else {
-                        fallback.classList.add('is-visible');
-                    }
-                }, 1500);
-            };
-
-            // 根据主题设置不同的颜色参数
-            if (theme === 'light') {
-                // 浅色主题配色
-                script.src = `https://cdn.clustrmaps.com/map_v2.js?cl=333333&${mapParams}&co=f5f5f5&cmo=2196f3&cmn=ff5252&ct=333333`;
-            } else {
-                // 深色主题配色（原有配色）
-                script.src = `https://cdn.clustrmaps.com/map_v2.js?cl=9d9d9d&${mapParams}&co=212121&cmo=3acc3a&cmn=ff5353&ct=cdd4d9`;
-            }
-
-            script.onload = markMapLoaded;
-            script.onerror = () => fallback.classList.add('is-visible');
-            container.appendChild(script);
-        };
-
         // 设置主题
         const setTheme = (theme) => {
             const body = document.body;
@@ -399,9 +352,6 @@
             }
 
             setStoredTheme(theme);
-
-            // 切换主题时重新加载 Clustrmaps
-            loadClustrMaps(theme);
         };
 
         // 切换主题
