@@ -431,6 +431,20 @@ a:not([class]):hover {
 	min-height: 240px;
 }
 
+.visitor-map-fallback {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	min-height: 220px;
+	color: #9d9d9d;
+	font-size: 0.86rem;
+	text-align: center;
+}
+
+.visitor-map-fallback.is-visible {
+	display: flex;
+}
+
 .visitor-map-footer {
 	margin-top: 20px;
 	padding-top: 12px;
@@ -743,6 +757,10 @@ body.light-mode .profile-tab-button::after {
 
 body.light-mode .visitor-map-footer {
 	border-top-color: rgba(66, 66, 66, 0.16);
+}
+
+body.light-mode .visitor-map-fallback {
+	color: #555555;
 }
 
 /* 主题切换按钮样式 */
