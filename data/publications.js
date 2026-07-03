@@ -54,7 +54,7 @@ window.sitePublications = [
             "Jianxin Li",
             "James B.D. Joshi"
         ],
-        "title": "Sparsification Under Siege: Defending Against Poisoning Attacks in Communication-Efficient Federated Learning",
+        "title": "Sparsification Under Siege: Dual-Level Defense Against Poisoning in Communication-Efficient Federated Learning",
         "titleSuffix": "",
         "venue": "In Proceedings of The 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI'26). Bremen, Germany. (accepted)",
         "venueSuffix": "",
@@ -62,7 +62,7 @@ window.sitePublications = [
         "links": [
             {
                 "label": "arXiv",
-                "url": "https://www.arxiv.org/abs/2505.01454"
+                "url": "https://arxiv.org/abs/2505.01454v5"
             }
         ]
     },
