@@ -26,7 +26,7 @@ window.siteServices = {
                 "label": "Chinese Journal of Electronics (CJE)",
                 "href": "https://cje.ejournal.org.cn/index.htm"
             },
-            "dates": "2024 - Present"
+            "dates": "2024 - 2026"
         },
         {
             "icon": "fas fa-file-signature",
