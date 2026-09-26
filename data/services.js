@@ -120,6 +120,10 @@ window.siteServices = {
                 {
                     "label": "2026",
                     "href": "https://sacmat.org/2026/index.php"
+                },
+                {
+                    "label": "2027",
+                    "href": "https://sacmat.org/2027/program-committee.php"
                 }
             ]
         },
