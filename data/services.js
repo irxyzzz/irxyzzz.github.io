@@ -135,6 +135,10 @@ window.siteServices = {
                 {
                     "label": "2026",
                     "href": "https://aaai.org/conference/aaai/aaai-26/"
+                },
+                {
+                    "label": "2027",
+                    "href": "https://aaai.org/conference/aaai/aaai-27/"
                 }
             ]
         },
