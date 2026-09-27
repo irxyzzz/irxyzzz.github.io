@@ -1,7 +1,7 @@
 // Data-only file. Keep it compatible with file:// previews and GitHub Pages.
 window.sitePublications = [
     {
-        "year": "2026",
+        "year": "2027",
         "type": [
             "selected",
             "book"
@@ -10,12 +10,80 @@ window.sitePublications = [
             "Runhua Xu",
             "James B.D. Joshi"
         ],
-        "title": "Privacy-Preserving Federated Learning: Techniques and Methods.",
+        "title": "Privacy-Preserving Federated Learning: Foundations, Techniques, and Practice",
         "titleSuffix": "",
-        "venue": "Springer Nature. (under construction)",
+        "venue": "Springer, Advances in Information Security, Vol. 96, 2027.",
         "venueSuffix": "",
         "badges": [],
-        "links": []
+        "links": [
+            {
+                "label": "Springer",
+                "url": "https://link.springer.com/book/9783032426789"
+            }
+        ]
+    },
+    {
+        "year": "2026",
+        "type": [
+            "journal"
+        ],
+        "authors": [
+            "Yunfeng Xia",
+            "Chao Li",
+            "Lei Li",
+            "Chenhao Zhang",
+            "Li Duan",
+            "Runhua Xu",
+            "Wei Wang"
+        ],
+        "title": "Toward Web 4.0: bidirectional trust between AI agents and blockchain",
+        "titleSuffix": "",
+        "venue": "Blockchain, Vol. 4 No. 2, Article 0008, 2026.",
+        "venueSuffix": "",
+        "badges": [],
+        "links": [
+            {
+                "label": "Blockchain",
+                "url": "https://www.elspublishing.com/doi/10.55092/blockchain20260008"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.55092/blockchain20260008"
+            }
+        ]
+    },
+    {
+        "year": "2026",
+        "type": [
+            "selected",
+            "journal"
+        ],
+        "authors": [
+            "Yizhong Liu",
+            "Boyu Zhao",
+            "Xuqi Huang",
+            "Runhua Xu",
+            "Xuejun Zhang",
+            "Jianwei Liu",
+            "Qianhong Wu",
+            "Willy Susilo",
+            "Robert H. Deng"
+        ],
+        "title": "Secure Authentication and Encryption With Distributed Management for SAGIN via Signcryption and Sharding Blockchain",
+        "titleSuffix": "",
+        "venue": "IEEE Transactions on Networking, Vol. 34, pp. 2400-2415, 2026.",
+        "venueSuffix": "",
+        "badges": [],
+        "links": [
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/11313617/"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/TON.2025.3647703"
+            }
+        ]
     },
     {
         "year": "2026",
@@ -30,13 +98,17 @@ window.sitePublications = [
         ],
         "title": "Position: The Privacy-Auditability Paradox in Federated Learning: Why We Need Controllable Secure Aggregation",
         "titleSuffix": "",
-        "venue": "In Proceedings of The 43rd International Conference on Machine Learning (ICML '26), Position Paper Track (regular). (accepted)",
+        "venue": "In Proceedings of The 43rd International Conference on Machine Learning (ICML '26), Position Paper Track (regular).",
         "venueSuffix": "",
         "badges": [],
         "links": [
             {
                 "label": "ICML",
                 "url": "https://icml.cc/virtual/2026/poster/67059"
+            },
+            {
+                "label": "OpenReview",
+                "url": "https://openreview.net/forum?id=vHCTZ78QUH"
             }
         ]
     },
@@ -56,13 +128,25 @@ window.sitePublications = [
         ],
         "title": "Sparsification Under Siege: Dual-Level Defense Against Poisoning in Communication-Efficient Federated Learning",
         "titleSuffix": "",
-        "venue": "In Proceedings of The 35th International Joint Conference on Artificial Intelligence (IJCAI-ECAI'26). Bremen, Germany. (accepted)",
+        "venue": "In Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI-ECAI '26), Main Track, pp. 644-651, 2026.",
         "venueSuffix": "",
         "badges": [],
         "links": [
             {
                 "label": "arXiv",
                 "url": "https://arxiv.org/abs/2505.01454v5"
+            },
+            {
+                "label": "IJCAI",
+                "url": "https://www.ijcai.org/proceedings/2026/73"
+            },
+            {
+                "label": "PDF",
+                "url": "https://www.ijcai.org/proceedings/2026/0073.pdf"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.24963/ijcai.2026/73"
             }
         ]
     },
@@ -150,6 +234,35 @@ window.sitePublications = [
             {
                 "label": "CJE",
                 "url": "https://cje.ejournal.org.cn/article/doi/10.23919/cje.2025.00.116"
+            }
+        ]
+    },
+    {
+        "year": "2025",
+        "type": [
+            "conference"
+        ],
+        "authors": [
+            "Liya Ma",
+            "Runhua Xu",
+            "Lu Liu",
+            "Siqi Sun",
+            "Chen Li",
+            "Lihong Wang"
+        ],
+        "title": "Privacy-Preserving Decentralized Federated Learning for Heterogeneous Graphs",
+        "titleSuffix": "",
+        "venue": "In Proceedings of the 2025 IEEE International Conference on High Performance Computing and Communications (HPCC '25), pp. 726-733, 2025.",
+        "venueSuffix": "",
+        "badges": [],
+        "links": [
+            {
+                "label": "IEEE",
+                "url": "https://ieeexplore.ieee.org/document/11207277/"
+            },
+            {
+                "label": "DOI",
+                "url": "https://doi.org/10.1109/HPCC67675.2025.00110"
             }
         ]
     },

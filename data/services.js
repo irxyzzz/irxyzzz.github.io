@@ -3,7 +3,7 @@ window.siteServices = {
     "journal": [
         {
             "icon": "fas fa-pen-nib",
-            "role": "Associated Editor",
+            "role": "Associate Editor",
             "organization": {
                 "label": "IEEE Transactions on Dependable and Secure Computing (IEEE TDSC)",
                 "href": "https://www.computer.org/csdl/journal/tq"
@@ -15,7 +15,7 @@ window.siteServices = {
             "role": "Youth Editorial Board Member",
             "organization": {
                 "label": "Blockchain",
-                "href": "https://www.elspub.com/journals/blockchain/home/"
+                "href": "https://www.elspublishing.com/journals/blockchain/home/"
             },
             "dates": "2025 - Present"
         },
@@ -32,14 +32,14 @@ window.siteServices = {
             "icon": "fas fa-file-signature",
             "role": "Guest Editor",
             "specialIssue": {
-                "label": "AI and Blockchain Convergence",
-                "href": "https://www.elspub.com/journals/blockchain/special_issues/ai_and_blockchain_convergence"
+                "label": "AI and Blockchain Convergence—Toward Decentralized, Autonomous, and Trustworthy Digital Ecosystems",
+                "href": "https://www.elspublishing.com/journals/blockchain/special_issues/ai_and_blockchain_convergence"
             },
             "journal": {
                 "label": "Blockchain",
-                "href": "https://www.elspub.com/journals/blockchain/home/"
+                "href": "https://www.elspublishing.com/journals/blockchain/home/"
             },
-            "deadline": "September 30, 2026"
+            "deadline": "June 30, 2027"
         },
         {
             "icon": "fas fa-file-signature",
@@ -52,7 +52,7 @@ window.siteServices = {
                 "label": "CJE",
                 "href": "https://cje.ejournal.org.cn/index.htm"
             },
-            "deadline": "May 31, 2025"
+            "dates": "2025"
         },
         {
             "icon": "fas fa-file-signature",
@@ -65,7 +65,7 @@ window.siteServices = {
                 "label": "IET Blockchain",
                 "href": "https://ietresearch.onlinelibrary.wiley.com/journal/26341573"
             },
-            "deadline": "October 31, 2024"
+            "dates": "2024"
         }
     ],
     "conference": [
@@ -201,147 +201,100 @@ window.siteServices = {
         },
         {
             "icon": "fas fa-users-cog",
-            "roles": [
-                "Publication Chair",
-                "Publicity Chair",
-                "Workshop/Tutorial Chair"
-            ],
             "organization": "IEEE International Conference on Collaboration and Internet Computing (CIC)",
-            "years": [
+            "assignments": [
                 {
-                    "label": "2019",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cic/2019/"
+                    "roles": ["Publication Chair", "Publicity Chair", "Workshop/Tutorial Chair"],
+                    "years": [
+                        { "label": "2019", "href": "https://www.sis.pitt.edu/lersais/conference/cic/2019/" },
+                        { "label": "2020", "href": "https://www.sis.pitt.edu/lersais/conference/cic/2020/" },
+                        { "label": "2021", "href": "https://www.sis.pitt.edu/lersais/conference/cic/2021/" },
+                        { "label": "2022", "href": "https://www.sis.pitt.edu/lersais/conference/cic/2022/" },
+                        { "label": "2023", "href": "https://www.sis.pitt.edu/lersais/conference/cic/2023/" },
+                        { "label": "2024", "href": "https://www.sis.pitt.edu/lersais/conference/cic/2024/" },
+                        { "label": "2025", "href": "https://www.sis.pitt.edu/lersais/conference/cic/2025/" },
+                        { "label": "2026", "href": "https://cic.ieee-cs.org/2026/" }
+                    ]
                 },
                 {
-                    "label": "2020",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cic/2020/"
-                },
-                {
-                    "label": "2021",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cic/2021/"
-                },
-                {
-                    "label": "2022",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cic/2022/"
-                },
-                {
-                    "label": "2023",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cic/2023/"
-                },
-                {
-                    "label": "2024",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cic/2024/"
-                },
-                {
-                    "label": "2025",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cic/2025/"
-                },
-                {
-                    "label": "2026",
-                    "href": "https://cic.ieee-cs.org/"
+                    "role": "Publication Chair",
+                    "years": [{ "label": "2027" }]
                 }
             ]
         },
         {
             "icon": "fas fa-users-cog",
-            "roles": [
-                "Publication Chair",
-                "Publicity Chair",
-                "Workshop/Tutorial Chair"
-            ],
             "organization": "IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications (TPS)",
-            "years": [
+            "assignments": [
                 {
-                    "label": "2019",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/tps/2019/"
+                    "roles": ["Publication Chair", "Publicity Chair", "Workshop/Tutorial Chair"],
+                    "years": [
+                        { "label": "2019", "href": "https://www.sis.pitt.edu/lersais/conference/tps/2019/" },
+                        { "label": "2020", "href": "https://www.sis.pitt.edu/lersais/conference/tps/2020/" },
+                        { "label": "2021", "href": "https://www.sis.pitt.edu/lersais/conference/tps/2021/" },
+                        { "label": "2022", "href": "https://www.sis.pitt.edu/lersais/conference/tps/2022/" },
+                        { "label": "2023", "href": "https://www.sis.pitt.edu/lersais/conference/tps/2023/" },
+                        { "label": "2024", "href": "https://www.sis.pitt.edu/lersais/conference/tps/2024/" },
+                        { "label": "2025", "href": "https://www.sis.pitt.edu/lersais/conference/tps/2025/" },
+                        { "label": "2026", "href": "https://tps.ieee-cs.org/2026/" }
+                    ]
                 },
                 {
-                    "label": "2020",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/tps/2020/"
+                    "role": "Publication Chair",
+                    "years": [{ "label": "2027" }]
                 },
                 {
-                    "label": "2021",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/tps/2021/"
-                },
-                {
-                    "label": "2022",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/tps/2022/"
-                },
-                {
-                    "label": "2023",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/tps/2023/"
-                },
-                {
-                    "label": "2024",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/tps/2024/"
-                },
-                {
-                    "label": "2025",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/tps/2025/"
-                },
-                {
-                    "label": "2026",
-                    "href": "https://tps.ieee-cs.org/"
+                    "role": "TPC Member",
+                    "years": [{ "label": "2027" }]
                 }
             ]
         },
         {
             "icon": "fas fa-users-cog",
-            "roles": [
-                "Publication Chair",
-                "Publicity Chair",
-                "Workshop/Tutorial Chair"
-            ],
             "organization": "IEEE International Conference on Cognitive Machine Intelligence (CogMI)",
-            "years": [
+            "assignments": [
                 {
-                    "label": "2019",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2019/"
+                    "roles": ["Publication Chair", "Publicity Chair", "Workshop/Tutorial Chair"],
+                    "years": [
+                        { "label": "2019", "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2019/" },
+                        { "label": "2020", "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2020/" },
+                        { "label": "2021", "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2021/" },
+                        { "label": "2022", "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2022/" },
+                        { "label": "2023", "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2023/" },
+                        { "label": "2024", "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2024/" },
+                        { "label": "2025", "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2025/" },
+                        { "label": "2026", "href": "https://cogmi.ieee-cs.org/2026/" }
+                    ]
                 },
                 {
-                    "label": "2020",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2020/"
-                },
-                {
-                    "label": "2021",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2021/"
-                },
-                {
-                    "label": "2022",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2022/"
-                },
-                {
-                    "label": "2023",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2023/"
-                },
-                {
-                    "label": "2024",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2024/"
-                },
-                {
-                    "label": "2025",
-                    "href": "https://www.sis.pitt.edu/lersais/conference/cogmi/2025/"
-                },
-                {
-                    "label": "2026",
-                    "href": "https://cogmi.ieee-cs.org/"
+                    "role": "Publication Chair",
+                    "years": [{ "label": "2027" }]
                 }
             ]
         },
         {
             "icon": "fas fa-users-cog",
-            "roles": [
-                "Publication Chair",
-                "Workshop Chair"
-            ],
             "organization": "IEEE Conference on Resilience and Integrated Security for Space and Critical Systems (RISC)",
-            "years": [
+            "assignments": [
                 {
-                    "label": "2026",
-                    "href": "https://risc.ieee-cs.org/"
+                    "roles": ["Publication Chair", "Workshop Chair"],
+                    "years": [{ "label": "2026", "href": "https://risc.ieee-cs.org/2026/" }],
+                    "note": "inaugural edition"
+                },
+                {
+                    "role": "Publication Chair",
+                    "years": [{ "label": "2027" }]
                 }
-            ],
-            "note": "inaugural edition"
+            ]
+        },
+        {
+            "icon": "fas fa-calendar-check",
+            "role": "Technical Program Committee Co-chair",
+            "organization": "IEEE Workshop on Trustworthy and Privacy-Preserving Human-AI Collaboration",
+            "inlineLink": {
+                "label": "TPHAC 2026",
+                "href": "https://sites.google.com/pitt.edu/tphac/home"
+            }
         },
         {
             "icon": "fas fa-calendar-check",

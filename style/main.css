@@ -719,15 +719,24 @@ body.light-mode .profile-tab-button::after {
 }
 
 /* 主题切换按钮样式 */
-.theme-toggle {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	width: 40px;
-	height: 40px;
+.page-controls {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	display: flex;
+	gap: 8px;
+	z-index: 1000;
+}
+
+.page-control-button {
+	position: static;
+	flex: 0 0 auto;
+	padding: 0;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
-	border: 2px solid rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.2);
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -737,36 +746,141 @@ body.light-mode .profile-tab-button::after {
 	backdrop-filter: blur(10px);
 }
 
-.theme-toggle:hover {
+.page-control-button:hover {
 	background-color: rgba(255, 255, 255, 0.2);
-	transform: scale(1.1);
 }
 
-body.light-mode .theme-toggle {
+body.light-mode .page-control-button {
 	background-color: rgba(0, 0, 0, 0.1);
 	border-color: rgba(0, 0, 0, 0.2);
 }
 
-body.light-mode .theme-toggle:hover {
+body.light-mode .page-control-button:hover {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.theme-toggle i {
-	font-size: 1.2rem;
+.page-control-button i {
+	font-size: 14px;
 	color: #f5f5f5;
 	transition: transform 0.3s ease;
 }
 
-body.light-mode .theme-toggle i {
+body.light-mode .page-control-button i {
 	color: #333333;
 }
 
-.theme-toggle:hover i {
+.page-control-button:hover i {
 	transform: rotate(20deg);
+}
+
+.language-toggle {
+	width: 50px;
+	border-radius: 6px;
+	gap: 4px;
+	color: #f5f5f5;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+body.light-mode .language-toggle {
+	color: #333333;
+}
+
+.language-toggle:hover i {
+	transform: none;
+}
+
+.page-controls button:focus-visible {
+	outline: 2px solid #f9a12e;
+	outline-offset: 3px;
+}
+
+html[lang="zh-CN"] .intro,
+html[lang="zh-CN"] .short-bio {
+	line-height: 1.9;
+}
+
+html[lang="zh-CN"] .up {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 180px;
+	gap: 32px;
+	align-items: center;
+}
+
+html[lang="zh-CN"] .up .intro {
+	text-align: left !important;
+	font-size: 14px;
+	color: #cfcfcf;
+}
+
+html[lang="zh-CN"] body.light-mode .up .intro {
+	color: #333333;
+}
+
+html[lang="zh-CN"] .intro-heading {
+	margin-bottom: 18px;
+}
+
+html[lang="zh-CN"] .intro-name {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.4;
+	margin: 0 0 6px;
+}
+
+html[lang="zh-CN"] .intro-name span {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 10px;
+}
+
+html[lang="zh-CN"] .up .intro > p + p {
+	margin-top: 12px;
+}
+
+html[lang="zh-CN"] .up .photos {
+	padding: 0;
+}
+
+@media (max-width: 767px) {
+	html[lang="zh-CN"] .up {
+		display: block;
+		position: relative;
+	}
+
+	html[lang="zh-CN"] .intro-heading {
+		min-height: 130px;
+		padding-right: 128px;
+	}
+
+	html[lang="zh-CN"] .intro-name span {
+		display: block;
+		margin: 4px 0 0;
+	}
+
+	html[lang="zh-CN"] .up .photos {
+		position: absolute;
+		top: 10px;
+		right: 12px;
+		width: 112px;
+	}
+
+	html[lang="zh-CN"] .up .photos img {
+		width: 112px;
+	}
 }
 
 /* 响应式设计 */
 @media (max-width: 576px) {
+	body {
+		padding-top: 64px;
+	}
+
+	.page-controls {
+		top: 12px;
+		right: 12px;
+	}
 	.up .photos img {
 		width: 120px;
 		/* 移动端缩小照片 */
@@ -775,17 +889,6 @@ body.light-mode .theme-toggle i {
 	.up .intro {
 		font-size: 0.85rem;
 		/* 调整字体大小 */
-	}
-
-	.theme-toggle {
-		width: 36px;
-		height: 36px;
-		top: 15px;
-		right: 15px;
-	}
-
-	.theme-toggle i {
-		font-size: 1rem;
 	}
 
 	.specification p,

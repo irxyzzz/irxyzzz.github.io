@@ -7,21 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description"
-        content="Runhua Xu is a Professor at Beihang University specializing in Privacy Enhancing Technologies, Collaborative Learning, Applied Cryptography, and Security in Edge/Cloud Computing.">
+        content="Runhua Xu is a Professor at Beihang University specializing in privacy-enhancing technologies, secure federated learning, AI privacy and security, applied cryptography, and trustworthy computing infrastructure.">
     <meta name="keywords"
-        content="Runhua Xu, Beihang University, Privacy-Preserving Machine Learning, Federated Learning, Applied Cryptography, Security, Privacy">
+        content="Runhua Xu, Beihang University, Privacy-Enhancing Technologies, Secure Federated Learning, AI Privacy, AI Security, Applied Cryptography, Trustworthy Computing">
     <meta name="author" content="Runhua Xu">
+    <link rel="canonical" href="https://runhua.me/">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Runhua Xu @ Beihang University">
     <meta property="og:description"
-        content="Professor specializing in Privacy Enhancing Technologies and Collaborative Learning">
+        content="Professor specializing in privacy-enhancing technologies, secure federated learning, and trustworthy AI and computing systems">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://irxyzzz.github.io/style/images/xu.png">
+    <meta property="og:url" content="https://runhua.me/">
+    <meta property="og:image" content="https://runhua.me/style/images/xu.png">
 
     <link rel="icon" type="image/png" href="style/images/xu.png" />
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main.css?v=20260927-3">
     <link rel="stylesheet" href="style/academicons.min.css">
     <link rel="stylesheet" href="style/fontawesome-all.min.css">
 
@@ -49,10 +51,15 @@
 </head>
 
 <body>
-    <!-- 主题切换按钮 -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
-        <i class="fas fa-moon" id="themeIcon"></i>
-    </button>
+    <div class="page-controls">
+        <button class="page-control-button" id="themeToggle" type="button" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+            <i class="fas fa-moon" id="themeIcon" aria-hidden="true"></i>
+        </button>
+        <button class="page-control-button language-toggle" id="languageToggle" type="button" aria-label="切换到中文" title="切换到中文">
+            <i class="fas fa-language" aria-hidden="true"></i>
+            <span id="languageLabel" lang="zh-CN">中</span>
+        </button>
+    </div>
 
     <div class="container-fluid">
         <div class="row">
@@ -60,7 +67,7 @@
             <div class="col-lg-8 col-md-10 col-sm-10 col-xs-12">
                 <div class="row up-space d-none d-sm-block"></div>
                 <div class="row up justify-content-end">
-                    <div class="col intro text-end">
+                    <div class="col intro text-end" data-i18n-html="intro">
                         <p class=" ">
                             <strong>Runhua Xu (许,润华) </strong>
                             is a <strong>Professor</strong> in
@@ -72,9 +79,7 @@
                         <p class=" ">
                             Prior to that, he served as a <strong>Research Staff Member</strong> <br>
                             at <a href="https://www.research.ibm.com/labs/almaden/" target="_blank" rel="noopener noreferrer"><strong>IBM
-                                    Research</strong></a> (<a
-                                href="https://researcher.watson.ibm.com/researcher/view_group.php?id=10276"
-                                target="_blank" rel="noopener noreferrer"><strong>AI S&P Solutions</strong></a> team).
+                                    Research</strong></a> (<strong>AI S&amp;P Solutions</strong> team).
                         </p>
                         <p class=" ">
                             He earned his Ph.D. in Information Security from
@@ -90,8 +95,7 @@
                             He also holds an M.S. in Computer Science from
                             <a href="https://ev.buaa.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>Beihang University</strong></a>,
                             <br>
-                            where he was advised by <a href="http://scse.buaa.edu.cn/info/1121/2579.htm"
-                                target="_blank" rel="noopener noreferrer"><strong>Prof. Bo Lang</strong></a>,
+                            where he was advised by <strong>Prof. Bo Lang</strong>,
                             <br>
                             and a B.E. in Software Engineering from
                             <a href="https://en.nwpu.edu.cn/" target="_blank" rel="noopener noreferrer"><strong>NWPU</strong></a>.
@@ -108,7 +112,7 @@
                         <div class="row contact">
                             <p class="text-end">
                                 <a href="resource/runhua_cv.pdf" target="_blank" rel="noopener noreferrer">
-                                    <span><strong>Curriculum Vitae </strong></span>
+                                    <span><strong data-i18n="Curriculum Vitae">Curriculum Vitae </strong></span>
                                     <i class="ai ai-cv-square ai-lg"></i>
                                 </a>
                             </p>
@@ -156,13 +160,13 @@
                 <div class="research-overview">
                     <h6 class="section-tab-label">
                         <i class="fas fa-code fa-lag"></i>
-                        <span>Research Areas</span>
+                        <span data-i18n="Research Areas">Research Areas</span>
                     </h6>
                     <div class="specification">
-                        <p>Privacy Enhancing Technologies, Federated Learning, Privacy-Preserving Collaborative
-                            Learning</p>
-                        <p>Applied Crypto, Blockchain, Access Control</p>
-                        <p>Security and Privacy Issues in Edge/Cloud Computing</p>
+                        <p data-i18n="researchPrivacy">Privacy-Enhancing Technologies and Secure Federated Learning</p>
+                        <p data-i18n="researchAI">AI Privacy, Security, and Trustworthiness</p>
+                        <p data-i18n="researchCrypto">Applied Cryptography, Blockchain, and Access Control</p>
+                        <p data-i18n="researchSystems">Trustworthy Computing Infrastructure for Edge and Cloud Systems</p>
                     </div>
                 </div>
 
@@ -173,7 +177,7 @@
                                 data-bs-target="#tab-services" type="button" role="tab" aria-controls="tab-services"
                                 aria-selected="true">
                                 <i class="fas fa-users"></i>
-                                <span>Academic Services</span>
+                                <span data-i18n="Academic Services">Academic Services</span>
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -181,7 +185,7 @@
                                 data-bs-toggle="tab" data-bs-target="#tab-publications" type="button" role="tab"
                                 aria-controls="tab-publications" aria-selected="false">
                                 <i class="fas fa-scroll"></i>
-                                <span>Publications</span>
+                                <span data-i18n="Publications">Publications</span>
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -189,7 +193,7 @@
                                 data-bs-target="#tab-bio" type="button" role="tab" aria-controls="tab-bio"
                                 aria-selected="false">
                                 <i class="fas fa-id-card"></i>
-                                <span>Short Bio</span>
+                                <span data-i18n="Short Bio">Short Bio</span>
                             </button>
                         </li>
                     </ul>
@@ -199,22 +203,22 @@
                             role="tabpanel" aria-labelledby="publications-tab">
                             <div class="specification">
                                 <div class="control">
-                                    <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
-                                        value="all"><strong>All</strong></button>
                                     <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter active"
-                                        value="selected"><strong>Selected</strong></button>
+                                        value="all"><strong data-i18n="All">All</strong></button>
                                     <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
-                                        value="manuscript"><strong>Manuscript</strong></button>
+                                        value="selected"><strong data-i18n="Selected">Selected</strong></button>
                                     <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
-                                        value="conference"><strong>Conference</strong></button>
+                                        value="manuscript"><strong data-i18n="Manuscript">Manuscript</strong></button>
                                     <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
-                                        value="workshop"><strong>Workshop</strong></button>
+                                        value="conference"><strong data-i18n="Conference">Conference</strong></button>
                                     <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
-                                        value="journal"><strong>Journal</strong></button>
+                                        value="workshop"><strong data-i18n="Workshop">Workshop</strong></button>
                                     <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
-                                        value="book,chapter"><strong>Book Chapter</strong></button>
+                                        value="journal"><strong data-i18n="Journal">Journal</strong></button>
                                     <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
-                                        value="patent"><strong>Patent</strong></button>
+                                        value="book,chapter"><strong data-i18n="Book Chapter">Book Chapter</strong></button>
+                                    <button class="btn btn-custom btn-dark btn-outline-secondary btn-filter"
+                                        value="patent"><strong data-i18n="Patent">Patent</strong></button>
                                 </div>
                                 <div class="publication-table-wrap table-responsive">
                                     <table class="table table-dark table-borderless table-hover table-sm table-custom"
@@ -230,19 +234,19 @@
                             <div class="specification">
                                 <div class="service-subheading">
                                     <i class="fas fa-book-open"></i>
-                                    <strong>Journal Services</strong>
+                                    <strong data-i18n="Journal Services">Journal Services</strong>
                                 </div>
                                 <ul class="fa-ul" id="journal-services-list"></ul>
 
                                 <div class="service-subheading service-subheading-tight">
                                     <i class="fas fa-users"></i>
-                                    <strong>Conference Services</strong>
+                                    <strong data-i18n="Conference Services">Conference Services</strong>
                                 </div>
                                 <ul class="fa-ul" id="conference-services-list"></ul>
 
                                 <div class="service-subheading service-subheading-tight">
                                     <i class="fas fa-clipboard-check"></i>
-                                    <strong>Journal Review</strong>
+                                    <strong data-i18n="Journal Review">Journal Review</strong>
                                 </div>
                                 <div class="review-panel" id="journal-review-panel"></div>
                             </div>
@@ -251,11 +255,12 @@
                         <section class="tab-pane fade profile-tab-pane" id="tab-bio" role="tabpanel"
                             aria-labelledby="bio-tab">
                             <div class="specification short-bio">
-                                <p>
+                                <p data-i18n-html="bio">
                                     Dr. Runhua Xu is a Professor in the School of Computer Science and Engineering at
-                                    Beihang University. His research focuses on privacy-enhancing technologies,
-                                    privacy and security for artificial intelligence, federated learning, applied
-                                    cryptography, blockchain, access control, and trustworthy computing infrastructure.
+                                    Beihang University. His research focuses on privacy-enhancing technologies and
+                                    secure federated learning, AI privacy, security, and trustworthiness, applied
+                                    cryptography, blockchain, access control, and trustworthy computing infrastructure
+                                    for edge and cloud systems.
                                     His work has appeared in leading conferences and journals including ACM CCS,
                                     USENIX Security, NeurIPS, AAAI, IEEE TDSC, and IEEE TIFS, and has received the ACM
                                     CCS 2023 Distinguished Paper Award, the 2023 China Blockchain Excellent Paper Award,
@@ -267,7 +272,7 @@
                                     Electronics, and a committee member of the CIE Technical Committee on Cyberspace
                                     Security. He is also an Associate Editor of IEEE Transactions on Dependable and
                                     Secure Computing and a Youth Editorial Board Member of ELSP Blockchain, and served
-                                    on the Youth Editorial Board of Chinese Journal of Electronics from 2024 to 2026.
+                                    on the Youth Editorial Board of Chinese Journal of Electronics.
                                 </p>
                             </div>
                         </section>
@@ -283,10 +288,13 @@
     <script src="data/services.js" type="text/javascript"></script>
     <script src="data/publications.js" type="text/javascript"></script>
     <script src="data/reviews.js" type="text/javascript"></script>
-    <script src="js/site-render.js" type="text/javascript"></script>
+    <script src="data/patents-cn.js?v=20260927-3" type="text/javascript"></script>
+    <script src="js/site-language.js?v=20260927-4" type="text/javascript"></script>
+    <script src="js/site-render.js?v=20260927-3" type="text/javascript"></script>
 
     <script type="text/javascript">
         $(function () {
+            window.siteI18n.init();
             if (window.renderSiteData) {
                 window.renderSiteData();
             }
@@ -298,7 +306,8 @@
 
                 $('#table_publication tr').filter(function () {
                     var rowTypes = ($(this).data('type') || '').toLowerCase().split(/\s+/);
-                    var shouldShow = filters.indexOf('all') > -1 || filters.some(function (filter) {
+                    var onlyIn = $(this).attr('data-only-in');
+                    var shouldShow = onlyIn ? filters.indexOf(onlyIn) > -1 : filters.indexOf('all') > -1 || filters.some(function (filter) {
                         return rowTypes.indexOf(filter) > -1;
                     });
                     $(this).toggle(shouldShow);
@@ -315,8 +324,16 @@
                 applyPublicationFilter($(this).val());
             });
 
-            // 页面加载时默认显示 Selected 类别
-            applyPublicationFilter('selected');
+            // 页面加载时默认显示全部成果
+            applyPublicationFilter('all');
+
+            window.addEventListener('site-language-change', function () {
+                var filter = $('.btn-filter.active').val() || 'all';
+                var reviewsOpen = document.querySelector('.review-more').open;
+                window.renderSiteData();
+                applyPublicationFilter(filter);
+                document.querySelector('.review-more').open = reviewsOpen;
+            });
         });
 
         // ================================
@@ -384,7 +401,12 @@
         "@type": "Organization",
         "name": "Beihang University"
     },
-    "url": "https://irxyzzz.github.io"
+    "url": "https://runhua.me/",
+    "image": "https://runhua.me/style/images/xu.png",
+    "sameAs": [
+        "https://scholar.google.com/citations?user=tst3wGMAAAAJ",
+        "https://orcid.org/0000-0003-4541-9764"
+    ]
     }
     </script>
 </body>
