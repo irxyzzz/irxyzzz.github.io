@@ -72,7 +72,8 @@
                 <a href="https://scse.buaa.edu.cn/English/Home.htm" target="_blank" rel="noopener noreferrer">计算机学院</a>教授</p>
             </div>
             <p>曾任 <a href="https://www.research.ibm.com/labs/almaden/" target="_blank" rel="noopener noreferrer">IBM Research</a> 研究员，隶属 AI S&amp;P Solutions 团队。</p>
-            <p>博士毕业于<a href="http://www.pitt.edu/" target="_blank" rel="noopener noreferrer">美国匹兹堡大学</a><a href="http://www.sci.pitt.edu/" target="_blank" rel="noopener noreferrer">计算与信息学院</a>，获信息安全博士学位，师从 IEEE Fellow <a href="http://www.sis.pitt.edu/~jjoshi/" target="_blank" rel="noopener noreferrer">James Joshi 教授</a>。此前在<a href="https://ev.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">北京航空航天大学</a>获得计算机科学硕士学位，师从 Bo Lang 教授；在<a href="https://en.nwpu.edu.cn/" target="_blank" rel="noopener noreferrer">西北工业大学</a>获得软件工程学士学位。</p>`,
+            <p>博士毕业于<a href="http://www.pitt.edu/" target="_blank" rel="noopener noreferrer">美国匹兹堡大学</a><a href="http://www.sci.pitt.edu/" target="_blank" rel="noopener noreferrer">计算与信息学院</a>，获信息安全博士学位，师从 IEEE Fellow <a href="http://www.sis.pitt.edu/~jjoshi/" target="_blank" rel="noopener noreferrer">James Joshi 教授</a>。</p>
+            <p><a href="https://ev.buaa.edu.cn/" target="_blank" rel="noopener noreferrer">北航</a>硕士（导师：Bo Lang 教授），<a href="https://en.nwpu.edu.cn/" target="_blank" rel="noopener noreferrer">西北工业大学</a>学士。</p>`,
         bio: '许润华，博士，北京航空航天大学计算机学院教授。主要研究方向包括隐私增强技术与安全联邦学习、人工智能隐私安全与可信性、应用密码学、区块链与访问控制，以及面向边缘与云计算的可信计算基础设施。相关成果发表于 ACM CCS、USENIX Security、NeurIPS、AAAI、IEEE TDSC、IEEE TIFS 等会议和期刊，获得 ACM CCS 2023 杰出论文奖、2023 年度中国区块链优秀论文奖及 IEEE CLOUD 2022 唯一最佳论文奖。担任 IEEE PES 电力系统通信与网络安全技术委员会电力人工智能分委会副主席、CCF 区块链专委会执行委员、CCF 网络与系统安全专委会执行委员、中国电子学会高级会员及网络空间安全专委会委员，现任 IEEE TDSC 编委、ELSP Blockchain 青年编委，曾任 Chinese Journal of Electronics（CJE）青年编委。'
     };
 
