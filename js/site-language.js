@@ -4,6 +4,7 @@
     // Only presentation text lives here; publication and service records remain shared.
     const chinese = {
         'Curriculum Vitae': '个人简历',
+        'Pageviews': '浏览次数',
         'Research Areas': '研究方向',
         'Academic Services': '学术服务',
         'Publications': '研究成果',
