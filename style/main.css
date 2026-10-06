@@ -144,8 +144,8 @@ a:not([class]):hover {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	gap: 4px;
-	padding: 8px 12px 0;
+	gap: 2px;
+	padding: 6px 12px 0;
 	clear: both;
 	border-top: solid 2px #ededed;
 	margin-top: 2px;
@@ -153,60 +153,39 @@ a:not([class]):hover {
 }
 
 .down > div {
+	width: auto;
 	max-width: 100%;
 	padding: 0;
 }
 
-.contact-top {
+.down .contact,
+.down .social {
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	gap: 6px 20px;
-	width: 100%;
-}
-
-.down .contact-secondary {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	gap: 4px 24px;
-	width: auto;
+	flex-direction: column;
+	align-items: flex-end;
 	text-align: right;
 }
 
-.contact-resources {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: flex-end;
-	gap: 16px;
-	line-height: 24px;
-	margin-top: 2px;
-}
-
-.contact-separator {
-	height: 14px;
-	border-left: 1px solid #aaa;
-}
-
-.down .social {
-	display: flex;
-	align-items: center;
-	gap: 14px;
-}
-
-.down .social a {
+.down a {
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
-	min-width: 20px;
-	min-height: 24px;
-}
-
-.down a {
+	justify-content: flex-end;
+	gap: 4px;
+	max-width: 100%;
+	min-height: 18px;
+	line-height: 18px;
 	text-decoration: none;
 	overflow-wrap: anywhere;
+}
+
+.down a i {
+	display: inline-flex;
+	flex: 0 0 16px;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	font-size: 16px;
+	line-height: 1;
 }
 
 .down a span {
@@ -920,13 +899,8 @@ html[lang="zh-CN"] .up .photos {
 		width: 120px;
 	}
 
-	.contact-top {
-		flex-direction: column-reverse;
-		align-items: flex-end;
-	}
-
-	.down .contact-secondary {
-		flex-direction: column;
+	.down a {
+		min-height: 24px;
 	}
 
 	html[lang="zh-CN"] .up {
