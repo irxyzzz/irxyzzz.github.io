@@ -122,13 +122,13 @@ a:not([class]):hover {
 }
 
 .up .photos {
-	padding-bottom: 8px;
-	padding-top: 8px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 .up .photos img {
-	width: 160px;
-	height: auto;
+	width: auto;
+	height: 158px;
 	border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -919,7 +919,7 @@ html[lang="zh-CN"] .short-bio {
 
 html[lang="zh-CN"] .up {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) 160px;
+	grid-template-columns: minmax(0, 1fr) 140px;
 	gap: 32px;
 	align-items: center;
 }
@@ -977,6 +977,7 @@ html[lang="zh-CN"] .up .photos {
 
 	.up .photos img {
 		width: 120px;
+		height: auto;
 	}
 
 	.down a {
